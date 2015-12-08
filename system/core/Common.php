@@ -844,3 +844,17 @@ if ( ! function_exists('function_usable'))
 		return FALSE;
 	}
 }
+
+if ( ! function_exists('p'))
+{
+	/**
+	 * 打印函数
+	 * @return [type] [description]
+	 */
+	function p($data)
+	{
+		echo "<pre>";
+		print_r($data);
+		echo "</pre>";
+	}
+}
